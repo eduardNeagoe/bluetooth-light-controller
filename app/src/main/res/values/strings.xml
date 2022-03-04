@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Light Controller</string>
+    <string name="button_bt_off">BT OFF</string>
+    <string name="button_bt_on">BT ON</string>
+    <string name="button_visible">Visibility ON</string>
+    <string name="button_paired_devices">Paired devices</string>
+    <string name="app_description">Bluetooth Remote Controller</string>
+    <string name="app_author">Author: Eduard Neagoe</string>
+    <string name="app_dev_name">Eduard Neagoe</string>
+    <string name="paired_devices">Paired devices:</string>
+    <string name="bt_switch">Bluetooth</string>
+    <string name="light_switch">Light</string>
+    <string name="bt_turn_on_message">Please enable your bluetooth connection.</string>
+    <string name="device_connected">Device connected! Use the light switch to control the lights.</string>
+    <string name="paired_devices_searching">Searching for paired devices</string>
+    <string name="wait">Please wait...</string>
+    <string name="connecting">Connecting</string>
+    <string name="already_connected">Already connected!</string>
+    <string name="connected">Connected!</string>
+    <string name="interrupted">Interrupted connection!</string>
+    <string name="oops">Oops!</string>
+    <string name="ok">Ok</string>
+    <string name="etti">Licenta ETTI 2017</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ro.licenta.bluetoothcontrollerapp.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@color/colorBackground">
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_author"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#686868"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginRight="16dp" />
+    <TextView
+        android:id="@+id/textViewEtti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etti"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#686868"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintRight_toLeftOf="@+id/textViewAuthor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.064" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="342dp"
+        android:layout_height="442dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-15dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Switch
+            android:id="@+id/lightSwitch"
+            android:layout_width="359dp"
+            android:layout_height="35dp"
+            android:text="@string/light_switch"
+            android:textOff="@string/button_bt_off"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="79dp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/textViewTurnBtOn"
+            android:layout_alignParentStart="true"/>
+
+        <Switch
+            android:id="@+id/btSwitch"
+            android:layout_width="359dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/bt_switch"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="79dp" />
+
+        <TextView
+            android:id="@+id/textViewPairedDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paired_devices"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="266dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textViewConnected"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textViewTurnBtOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_turn_on_message"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="266dp"
+            android:layout_below="@+id/btSwitch"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/textViewConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/device_connected"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="266dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/lightSwitch"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorAccent"/>
+
+
+        <ListView
+            android:id="@+id/listViewPairedDevices"
+            android:layout_width="190dp"
+            android:layout_height="106dp"
+            android:headerDividersEnabled="false"
+            android:scrollbars="horizontal|vertical"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="226dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textViewPairedDevices" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
